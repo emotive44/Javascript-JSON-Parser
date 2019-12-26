@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav id="navigation">
+            <div id="navigation-text">
+                <p id="lecture-name">Objects, JSON and DOM Events</p>
+                <p id="problem-name">04. JSON Parser</p>
+            </div>
+        </nav>
+        <main>
+            <div id="exercise">
+                <form>
+                    <label>Input</label>
+                    <input type="text" id="input" placeholder='{"key1": 1, "key2": "two"}'>
+                    <label>Command</label>
+                    <input type="text" id="command" placeholder="typeof key1 or value of key2">
+                    <div class="center">
+                        <input type="submit" id="button" onclick="solve()" value="Extract Info">
+                    </div>
+                </form>
+                <label>Result</label>
+               <textarea readonly rows="10" cols="50" id="result"></textarea>
+            </div>
+        </main>
+    </div>
+    <script>
+        solve();
+    </script>
+</body>
+</html>
